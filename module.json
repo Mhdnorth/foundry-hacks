@@ -2,6 +2,7 @@
   "id": "kabbi-hacks",
   "title": "Kabbi Hacks",
   "description": "Assortment of hacks from Kabbi",
+  "download": "http://github.com/kabbi/foundry-hacks/zipball/main/",
   "authors": [
     {
     "name": "Kabbi"
