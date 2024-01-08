@@ -1,0 +1,15 @@
+{
+  "id": "kabbi-hacks",
+  "title": "Kabbi Hacks",
+  "description": "Assortment of hacks from Kabbi",
+  "authors": [
+    {
+    "name": "Kabbi"
+    }
+  ],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  }
+}
