@@ -1,10 +1,25 @@
-console.log("Hello World! This code runs immediately when the file is loaded.");
+Hooks.on("ready", async () => {
+  const actors = [...game.actors.values()].filter(actor => actor.ownership[game.user.id] === foundry.CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER);
+  if (actors.length === 0) {
+    console.log('[kabbi] No actors found for the current user');
+    return;
+  }
+  if (actors.length > 1) {
+    console.log('[kabbi] More then one actor for the current user');
+    return;
+  }
 
-Hooks.on("init", function() {
-  console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
-});
+  const [actor] = actors;
 
-Hooks.on("ready", function() {
-  console.log("This code runs once core initialization is ready and game data is available.");
+  for (const scene of game.scenes.values()) {
+    const tokens = [...scene.tokens.values()];
+    const actorToken = tokens.find(token => token.actorId === actor.id);
+    if (actorToken) {
+      await scene.view()
+      return;
+    }
+  }
+
+  console.log("[kabbi] Found no scene / token combo for actor", actor.name);
 });
 
