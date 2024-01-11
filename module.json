@@ -4,9 +4,7 @@
   "description": "Assortment of hacks from Kabbi",
   "download": "https://github.com/kabbi/foundry-hacks/zipball/main/",
   "manifest": "https://raw.githubusercontent.com/kabbi/foundry-hacks/main/module.json",
-  "esmodules": [
-    "scripts/roller.js"
-  ],
+  "esmodules": ["scripts/hooks.js"],
   "authors": [{"name": "Kabbi"}],
   "version": "1.0.0",
   "compatibility": {
