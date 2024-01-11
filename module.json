@@ -3,6 +3,7 @@
   "title": "Kabbi Hacks",
   "description": "Assortment of hacks from Kabbi",
   "download": "http://github.com/kabbi/foundry-hacks/zipball/main/",
+  "manifest": "https://raw.githubusercontent.com/kabbi/foundry-hacks/main/module.json",
   "esmodules": [
     "scripts/roller.js"
   ],
