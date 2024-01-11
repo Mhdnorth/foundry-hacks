@@ -3,11 +3,10 @@
   "title": "Kabbi Hacks",
   "description": "Assortment of hacks from Kabbi",
   "download": "http://github.com/kabbi/foundry-hacks/zipball/main/",
-  "authors": [
-    {
-    "name": "Kabbi"
-    }
+  "esmodules": [
+    "scripts/roller.js"
   ],
+  "authors": [{"name": "Kabbi"}],
   "version": "1.0.0",
   "compatibility": {
     "minimum": "10",
