@@ -15,6 +15,7 @@ Hooks.on("ready", async () => {
     const tokens = [...scene.tokens.values()];
     const actorToken = tokens.find(token => token.actorId === actor.id);
     if (actorToken) {
+      console.log("[kabbi] Switching to scene", scene.name, "for actor", actor.name);
       await scene.view()
       return;
     }
